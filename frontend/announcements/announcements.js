@@ -1,5 +1,4 @@
 console.log("Announcements JS Loaded");
-alert("JS Loaded");
 const user =
 JSON.parse(
 localStorage.getItem(
