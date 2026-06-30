@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Events | EventHub
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../events.css">
+
+</head>
+
+<body>
+
+    <h1 class="title">
+        College Events
+    </h1>
+
+    <div class="filter-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search event by name or venue">
+
+        <select id="categoryFilter">
+
+            <option value="All">
+                All Categories
+            </option>
+
+            <option value="Technical">
+                Technical
+            </option>
+
+            <option value="Cultural">
+                Cultural
+            </option>
+
+            <option value="Workshop">
+                Workshop
+            </option>
+
+            <option value="Sports">
+                Sports
+            </option>
+
+            <option value="Hackathon">
+                Hackathon
+            </option>
+
+        </select>
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </div>
+
+    <div
+        id="eventsContainer"
+        class="events-container">
+
+    </div>
+
+    <script src="../events.js"></script>
+
+</body>
+
+</html>

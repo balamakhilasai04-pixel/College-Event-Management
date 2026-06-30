@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Create Event</title>
+
+    <link
+    rel="stylesheet"
+    href="../create-event.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="event-box">
+
+        <h1>
+            Create Event
+        </h1>
+
+        <p>
+            Build a professional
+            college event experience
+        </p>
+
+        <form id="eventForm">
+
+           <!-- Event Title -->
+
+            <input
+            type="text"
+            id="title"
+            placeholder=
+            "Event Title"
+            required>
+
+            
+<h3>Event Banner URL</h3>
+<input
+type="text"
+id="banner"
+placeholder="Paste Banner URL">
+
+
+            <!-- Category -->
+
+            <select
+            id="category"
+            required>
+
+                <option value="">
+                    Choose Category
+                </option>
+
+                <option>
+                    Technical
+                </option>
+
+                <option>
+                    Cultural
+                </option>
+
+                <option>
+                    Workshop
+                </option>
+
+                <option>
+                    Hackathon
+                </option>
+
+                <option>
+                    Sports
+                </option>
+
+            </select>
+
+
+            <!-- Date & Time -->
+
+            <div class="row">
+
+                <input
+                type="date"
+                id="date"
+                required>
+
+
+                <input
+                type="time"
+                id="time"
+                required>
+
+            </div>
+
+
+            <!-- Venue -->
+
+            <input
+            type="text"
+            id="venue"
+            placeholder=
+            "Venue"
+            required>
+
+
+            <!-- Cost -->
+
+            <input
+            type="number"
+            id="registrationFee"
+            placeholder=
+            "Registration Cost">
+
+            <h3>Event Capacity</h3>
+
+<input
+type="number"
+id="capacity"
+required>
+
+
+            <!-- Description -->
+
+           <textarea
+id="description"
+placeholder=
+"Small Event Description"
+rows="3">
+
+</textarea>
+            <!-- Highlights -->
+
+            <h3>
+                Event Highlights
+            </h3>
+
+            <div class="highlights-box">
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Certificate">
+
+                    Certificate
+
+                </label>
+
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Food">
+
+                    Food
+
+                </label>
+
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Prize Money">
+
+                    Prize Money
+
+                </label>
+
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Networking">
+
+                    Networking
+
+                </label>
+
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Workshop Kit">
+
+                    Workshop Kit
+
+                </label>
+
+
+                <label>
+
+                    <input
+                    type="checkbox"
+                    name="highlight"
+                    value="Refreshments">
+
+                    Refreshments
+
+                </label>
+
+            </div>
+
+
+            <!-- Coordinator -->
+
+            <div class="row">
+
+                <input
+                type="text"
+                id="coordinatorName"
+                placeholder=
+                "Coordinator Name">
+
+
+                <input
+                type="text"
+                id="coordinatorPhone"
+                placeholder=
+                "Phone Number">
+
+            </div>
+
+
+            
+
+
+            <!-- Submit -->
+
+            <button
+            type="submit">
+
+                Create Event
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script
+src="../create-event.js">
+
+</script>
+
+</body>
+</html> 

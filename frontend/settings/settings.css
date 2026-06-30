@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(6, 182, 212, 0.18),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(139, 92, 246, 0.22),
+            transparent 35%
+        ),
+        #0f172a;
+}
+
+.settings-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.settings-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 42px;
+    margin-bottom: 40px;
+    border-radius: 28px;
+    background: rgba(30, 41, 59, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+
+.settings-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.settings-icon {
+    width: 76px;
+    height: 76px;
+    min-width: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    font-size: 34px;
+    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.28);
+}
+
+.settings-label {
+    color: #22d3ee;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.settings-heading h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.settings-subtitle {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.settings-section {
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.settings-section h2 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.settings-section label {
+    display: block;
+    color: #cbd5e1;
+    font-size: 14px;
+    margin: 18px 0 8px;
+}
+
+.settings-section input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    outline: none;
+    border-radius: 13px;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.settings-section input:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.12);
+}
+
+.settings-section input[readonly] {
+    cursor: not-allowed;
+    color: #94a3b8;
+}
+
+.primary-btn,
+.secondary-btn,
+.back-btn,
+.logout-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 13px;
+    transition: 0.25s;
+}
+
+.primary-btn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    color: white;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+}
+
+.primary-btn:hover,
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(6, 182, 212, 0.22);
+}
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.setting-row h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.setting-row p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    width: 54px;
+    height: 30px;
+    min-width: 54px;
+    margin: 0 !important;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #475569;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background: white;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+.secondary-btn {
+    padding: 14px 22px;
+    color: #67e8f9;
+    border: 1px solid rgba(34, 211, 238, 0.45);
+    background: rgba(6, 182, 212, 0.08);
+}
+
+.secondary-btn:hover {
+    background: rgba(6, 182, 212, 0.16);
+}
+
+.settings-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.back-btn,
+.logout-btn {
+    flex: 1;
+    padding: 16px;
+    color: white;
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+}
+
+.logout-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(239, 68, 68, 0.22);
+}
+
+@media (max-width: 600px) {
+    .settings-page {
+        padding: 24px 14px;
+    }
+
+    .settings-card {
+        padding: 25px 18px;
+        border-radius: 22px;
+    }
+
+    .settings-heading {
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .settings-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 27px;
+        border-radius: 18px;
+    }
+
+    .settings-heading h1 {
+        font-size: 28px;
+    }
+
+    .settings-actions {
+        flex-direction: column;
+    }
+
+    .setting-row {
+        align-items: flex-start;
+    }
+}
+.security-text {
+    color: #aebbd1;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.password-form {
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.password-form label {
+    display: block;
+    margin: 16px 0 8px;
+    color: #dbe7ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.password-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.07);
+    color: white;
+    font-size: 15px;
+}
+
+.password-form input:focus {
+    border-color: #22c7f0;
+    box-shadow: 0 0 0 3px rgba(34, 199, 240, 0.14);
+}
+
+.password-form input::placeholder {
+    color: #91a0bb;
+}
+
+.password-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.cancel-btn {
+    padding: 13px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    background: transparent;
+    color: #dbe7ff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.hidden {
+    display: none;
+}

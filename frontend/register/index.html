@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Register
+    </title>
+
+    <link rel="stylesheet" href="../register.css">
+</head>
+
+<body>
+
+<div class="register-page">
+
+    <header class="navbar">
+
+        <a
+    class="logo"
+    href="/frontend/index.html">
+
+    <span class="logo-icon">
+        E
+    </span>
+
+    <span class="logo-text">
+        EventHub
+    </span>
+
+</a>
+
+        <div class="nav-links">
+
+            <a href="/frontend/index.html">
+                Home
+            </a>
+
+            <a href="/frontend/login/">
+                Login
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="register-layout">
+
+        <section class="welcome-content">
+
+            <p class="tag">
+                EVENTS MADE SIMPLE
+            </p>
+
+            <h1>
+                Create, discover and join
+                <br>
+                amazing events.
+            </h1>
+
+            <p class="welcome-text">
+                Create your EventHub account to discover events, register as a participant, or manage events as an organizer.
+            </p>
+
+            <a
+                class="explore-btn"
+                href="/frontend/index.html">
+
+                Explore Events
+
+            </a>
+
+        </section>
+
+        <div class="container">
+
+            <div class="register-card">
+
+                <h1>
+                    Create Account
+                </h1>
+
+                <p>
+                    Register to join events
+                </p>
+
+                <form id="registerForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Email"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter Phone Number"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter Password"
+                        required
+                    >
+
+                    <select
+                        id="role"
+                        required
+                    >
+
+                        <option value="">
+                            Select Role
+                        </option>
+
+                        <option value="participant">
+                            Participant
+                        </option>
+
+                        <option value="organizer">
+                            Organizer
+                        </option>
+
+                    </select>
+
+                    <button type="submit">
+                        Register
+                    </button>
+
+                </form>
+
+                <div class="bottom-text">
+
+                    Already have an account?
+
+                    <a href="/frontend/login/">
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../register.js"></script>
+
+</body>
+</html>

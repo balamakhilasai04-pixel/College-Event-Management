@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+My Registrations
+</title>
+
+<link
+rel="stylesheet"
+href="../dashboard.css">
+
+<style>
+
+.page{
+    width:100%;
+    padding:0;
+}
+
+.page h1{
+    margin:0 0 30px;
+    color:#ffffff;
+    font-size:38px;
+    font-weight:700;
+}
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:24px;
+    padding:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    color:#ffffff;
+}
+
+th,
+td{
+    padding:16px;
+    text-align:left;
+    border-bottom:1px solid rgba(255,255,255,0.10);
+}
+
+th{
+    color:#8b5cf6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="sidebar-brand">
+
+                <div class="brand-icon">
+                    E
+                </div>
+
+                <h2>
+                    EventHub
+                </h2>
+
+            </div>
+
+            <p class="menu-label">
+                EVENT MANAGEMENT
+            </p>
+
+            <nav class="sidebar-menu">
+<button
+class="menu-item"
+onclick="goDashboard()">
+
+    <span class="menu-indicator"></span>
+
+    Dashboard
+
+</button>
+                <button
+class="menu-item"
+onclick="goToEvents()">
+
+    <span class="menu-indicator"></span>
+
+    Events
+
+</button>
+                
+               <button
+class="menu-item active"
+onclick="goMyRegistrations()">
+
+    <span class="menu-indicator"></span>
+
+    My Registrations
+
+</button>
+                <button
+class="menu-item"
+onclick="goSettings()">
+
+    <span class="menu-indicator"></span>
+
+    Settings
+
+</button>
+            </nav>
+
+        </div>
+
+        <button
+    class="sidebar-logout"
+    onclick="logout()">
+
+    <span class="menu-dot logout-dot"></span>
+
+    <span class="menu-text">
+        Logout
+    </span>
+
+</button>
+
+    </aside>
+<div class="main-content">
+
+<div class="page">
+
+<h1>
+
+My Registrations
+
+</h1>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Event
+</th>
+
+<th>
+Name
+</th>
+
+<th>
+Email
+</th>
+
+<th>
+Phone
+</th>
+
+</tr>
+
+</thead>
+
+<tbody
+id="myRegistrationTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="my-registrations.js"></script>
+
+</body>
+</html>

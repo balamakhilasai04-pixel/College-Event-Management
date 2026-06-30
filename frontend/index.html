@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+    EventHub | College Events
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <a
+    class="brand"
+    href="/frontend/index.html">
+
+        <span class="brand-mark">
+            E
+        </span>
+
+        <span class="logo">
+            EventHub
+        </span>
+
+    </a>
+
+    <div class="nav-buttons">
+
+        <button
+        class="login-btn"
+        onclick="goLogin()">
+
+            Login
+
+        </button>
+
+        <button
+        class="register-btn"
+        onclick="goRegister()">
+
+            Register
+
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- Welcome / Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-glow hero-glow-one"></div>
+
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+
+            ✦ DISCOVER • CONNECT • CELEBRATE
+
+        </p>
+
+        <h1>
+
+            Your Campus,
+            <span>
+                Full of Events.
+            </span>
+
+        </h1>
+
+        <p class="hero-description">
+
+            Find college fests, workshops, sports events and more.
+            Register easily and stay connected with what is happening on campus.
+
+        </p>
+
+        <button
+        class="start-btn"
+        onclick="document.getElementById('upcomingEvents').scrollIntoView({ behavior: 'smooth' })">
+
+            Explore Events
+            <span>
+                →
+            </span>
+
+        </button>
+
+    </div>
+
+    <div class="event-collage">
+
+    <div class="collage-glow"></div>
+
+    <div class="collage-title">
+        <span class="collage-spark">✦</span>
+        Discover campus moments
+    </div>
+
+    <div class="floating-event floating-event-one">
+
+        <div class="floating-icon">
+            🎨
+        </div>
+
+        <div>
+            <p>
+                Creative Club
+            </p>
+
+            <strong>
+                Art Workshop
+            </strong>
+        </div>
+
+    </div>
+
+    <div class="floating-event floating-event-two">
+
+        <div class="floating-icon">
+            🎤
+        </div>
+
+        <div>
+            <p>
+                Cultural Night
+            </p>
+
+            <strong>
+                Open Mic Fest
+            </strong>
+        </div>
+
+    </div>
+
+    <div class="floating-event floating-event-three">
+
+        <div class="floating-icon">
+            ⚽
+        </div>
+
+        <div>
+            <p>
+                Sports Club
+            </p>
+
+            <strong>
+                Intercollege Games
+            </strong>
+        </div>
+
+    </div>
+
+    <div class="collage-center">
+
+        <span>
+            EventHub
+        </span>
+
+        <strong>
+            Your campus.<br>
+            Your events.
+        </strong>
+
+    </div>
+
+</div>
+
+    
+
+    
+</div>
+
+</section>
+
+
+<!-- Events Section -->
+
+<section
+class="events-section"
+id="upcomingEvents">
+
+    <div class="section-heading">
+
+        <p>
+
+            UPCOMING EVENTS
+
+        </p>
+
+        <h2>
+
+            Find Your Next Campus Experience
+
+        </h2>
+
+        <span>
+
+            Explore events happening around you.
+
+        </span>
+
+    </div>
+
+    <div
+    id="homeEvents"
+    class="events-grid">
+
+    </div>
+
+</section>
+
+
+<!-- Features Section -->
+
+<section class="features-section">
+
+    <div class="feature-item">
+
+        <div class="feature-icon">
+            ✦
+        </div>
+
+        <div>
+
+            <h3>
+                Discover Events
+            </h3>
+
+            <p>
+                Find events that match your interests.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <div class="feature-icon">
+            ✓
+        </div>
+
+        <div>
+
+            <h3>
+                Easy Registration
+            </h3>
+
+            <p>
+                Register quickly and keep track of your events.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <div class="feature-icon">
+            ★
+        </div>
+
+        <div>
+
+            <h3>
+                Stay Updated
+            </h3>
+
+            <p>
+                Never miss an important campus activity.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    © 2026 EventHub · College Event Management System
+
+</footer>
+
+
+<script
+src="index.js">
+
+</script>
+
+<script
+src="home-events.js">
+
+</script>
+```
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile | EventHub</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <main class="profile-page">
+
+        <section class="profile-card">
+
+            <div class="profile-heading">
+
+                <div
+                    class="profile-avatar"
+                    id="profileInitial"
+                >
+                    U
+                </div>
+
+                <div>
+
+                    <p class="profile-label">
+                        ACCOUNT PROFILE
+                    </p>
+
+                    <h1 id="profileName">
+                        User Name
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-details">
+
+                <div class="detail-row">
+
+                    <div class="detail-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <p class="detail-label">
+                            Email Address
+                        </p>
+
+                        <p
+                            class="detail-value"
+                            id="profileEmail"
+                        >
+                            user@email.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <div class="detail-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <p class="detail-label">
+                            Phone Number
+                        </p>
+
+                        <p
+                            class="detail-value"
+                            id="profilePhone"
+                        >
+                            Not available
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <div class="detail-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <p class="detail-label">
+                            Role
+                        </p>
+
+                        <p
+                            class="detail-value"
+                            id="profileRole"
+                        >
+                            Participant
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="back-btn"
+                type="button"
+                onclick="goDashboard()"
+            >
+                ← Back to Dashboard
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>
