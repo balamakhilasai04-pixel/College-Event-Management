@@ -20,8 +20,7 @@ await response.json();
 
 // Show only latest 3 events
 
-const latestEvents =
-events.slice(0,3);
+const latestEvents = events;
 
 
 homeEvents.innerHTML =
@@ -57,55 +56,98 @@ return;
 }
 
 
-latestEvents.forEach(
-(event)=>{
+latestEvents.forEach((event)=>{
 
-homeEvents.innerHTML +=
+    let imageHTML = "";
 
-`
-<div class="glass-card">
+    if(event.banner || event.image){
 
-<h3>
+        imageHTML = `
+            <img
+                src="${event.banner || event.image}"
+                alt="${event.title}"
+                class="event-image"
+                onerror="
+                this.style.display='none';
+                this.nextElementSibling.style.display='flex';
+                "
+            >
 
-🎉
-${event.title}
+            <div
+                class="event-image-fallback"
+                style="display:none;"
+            >
+                🎉
+            </div>
+        `;
 
-</h3>
+    }else{
 
-<p>
+        imageHTML = `
+            <div class="event-image-fallback">
+                🎉
+            </div>
+        `;
 
-📍
-${event.venue}
+    }
 
-</p>
+    homeEvents.innerHTML += `
 
-<p>
+    <div class="event-card">
 
-📅
-${event.date}
+        <div class="event-image-area">
 
-</p>
+            ${imageHTML}
 
-<p>
+            <span class="event-category">
+                ${event.category || "General"}
+            </span>
 
-💰 ₹
-${event.registrationFee
-|| 0}
+        </div>
 
-</p>
+        <div class="event-content">
 
-<button
-onclick=
-"viewEvent(
-'${event._id}'
-)">
+            <h2>
+                ${event.title}
+            </h2>
 
-View Details
+            <p class="event-description">
+                ${event.description}
+            </p>
 
-</button>
+            <div class="event-details">
 
-</div>
-`;
+                <p>
+                    📅 ${event.date}
+                </p>
+
+                <p>
+                    🕒 ${event.time}
+                </p>
+
+                <p>
+                    📍 ${event.venue}
+                </p>
+
+                <p>
+                    💰 ₹${event.registrationFee || 0}
+                </p>
+
+            </div>
+
+            <button
+                class="view-details-btn"
+                onclick="viewEvent('${event._id}')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+    </div>
+
+    `;
 
 });
 

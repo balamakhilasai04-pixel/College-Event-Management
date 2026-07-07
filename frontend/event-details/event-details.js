@@ -389,33 +389,20 @@ user.phone;
 }
 else{
 
-userName =
-prompt(
-"Enter Your Name"
+localStorage.setItem(
+    "selectedEventId",
+    id
 );
 
-userEmail =
-prompt(
-"Enter Your Email"
+localStorage.setItem(
+    "selectedEventName",
+    eventName
 );
 
-userPhone =
-prompt(
-"Enter Your Phone Number"
-);
-
-if(
-!userName ||
-!userEmail
-){
-
-alert(
-"Name and Email are required"
-);
+window.location.href =
+"../public-registration/registration.html";
 
 return;
-
-}
 
 }
 const response =

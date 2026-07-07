@@ -888,3 +888,26 @@ background:#00d5ff;
 color:black;
 
 }
+/* HOME EVENTS GRID */
+
+.events-container{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+}
+
+@media(max-width:1100px){
+
+    .events-container{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+}
+
+@media(max-width:650px){
+
+    .events-container{
+        grid-template-columns:1fr;
+    }
+
+}
