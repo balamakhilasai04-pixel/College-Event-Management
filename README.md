@@ -73,28 +73,3 @@ npm start
 
 **Akhila Balam**
 
-## 📸 Screenshots
-
-### Welcome Page
-
-![Welcome Page](screenshots/welcome.png)
-
-### Login Page
-
-![Login Page](screenshots/login.png)
-
-### Dashboard
-
-![Dashboard](screenshots/Dashboard.png)
-
-### Events Page
-
-![Events Page](screenshots/events.png)
-
-### Event Details
-
-![Event Details](screenshots/event-details.png)
-
-### Visitor Registration
-
-![Visitor Registration](screenshots/registration.png)
