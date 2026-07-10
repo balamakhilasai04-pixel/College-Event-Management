@@ -114,7 +114,7 @@ College-Event-Management
 
 ## 🔑 Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/Login.png)
 
 ---
 
@@ -126,25 +126,25 @@ College-Event-Management
 
 ## 🎉 Events Page
 
-![Events Page](screenshots/events.png)
+![Events Page](screenshots/Events.png)
 
 ---
 
 ## 📄 Event Details
 
-![Event Details](screenshots/event-details.png)
+![Event Details](screenshots/Event-Details.png)
 
 ---
 
 ## 📝 Registrations
 
-![Registrations](screenshots/registrations.png)
+![Registrations](screenshots/Registrations.png)
 
 ---
 
 ## 📢 Announcements
 
-![Announcements](screenshots/announcements.png)
+![Announcements](screenshots/Announcements.png)
 ---
 
 # 🚀 Installation
