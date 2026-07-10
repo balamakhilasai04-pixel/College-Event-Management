@@ -114,38 +114,37 @@ College-Event-Management
 
 ## 🔑 Login Page
 
-![Login Page](screenshots/Login.png)
+![Login Page](./screenshots/Login.png)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
 ---
 
 ## 🎉 Events Page
 
-![Events Page](screenshots/Events.png)
+![Events Page](./screenshots/Events.png)
 
 ---
 
 ## 📄 Event Details
 
-![Event Details](screenshots/Event-Details.png)
+![Event Details](./screenshots/Event Details.png)
 
 ---
 
 ## 📝 Registrations
 
-![Registrations](screenshots/Registrations.png)
+![Registrations](./screenshots/Registrations.png)
 
 ---
 
 ## 📢 Announcements
 
-![Announcements](screenshots/Announcements.png)
----
+![Announcements](./screenshots/Announcements.png)
 
 # 🚀 Installation
 
