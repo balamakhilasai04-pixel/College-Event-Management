@@ -110,7 +110,41 @@ College-Event-Management
 │
 └── README.md
 ```
+# 📸 Project Screenshots
 
+## 🔑 Login Page
+
+![Login Page](screenshots/login.png)
+
+---
+
+## 📊 Dashboard
+
+![Dashboard](screenshots/Dashboard.png)
+
+---
+
+## 🎉 Events Page
+
+![Events Page](screenshots/events.png)
+
+---
+
+## 📄 Event Details
+
+![Event Details](screenshots/event-details.png)
+
+---
+
+## 📝 Registrations
+
+![Registrations](screenshots/registrations.png)
+
+---
+
+## 📢 Announcements
+
+![Announcements](screenshots/announcements.png)
 ---
 
 # 🚀 Installation
