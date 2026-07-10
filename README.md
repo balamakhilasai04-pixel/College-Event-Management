@@ -132,7 +132,7 @@ College-Event-Management
 
 ## 📄 Event Details
 
-![Event Details](./screenshots/Event Details.png)
+![Event Details](./screenshots/EventDetails.png)
 
 ---
 
